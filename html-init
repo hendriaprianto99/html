@@ -1,0 +1,25 @@
+# Apa itu HTML? //HTML adalah bahasa markup untuk membuat halaman web
+    -HTML singkatan dari HyperText Markup Language
+    -standar bahasa markup untuk membuat web
+    -HTML describes structure dari sebuah halaman web
+    -terdiri dari serangkaian elemen
+    -elemen HTML memberitahu browser untuk menampilkan konten sesuai tag elemennya
+
+# Cara membuat script html //kalau menggunakan vscode/emmet cukup tik "!" then tab
+
+# Penjelasan dari tiap tag html
+    - <!DOCTYPE html> //deklarasi html5
+    - <html> //root elemen dari halaman html
+    - <head> //berisi informasi meta tentang halaman HTML
+    - <title> //untuk judul (didalam tag head)
+    - <body> //berisi semua tag elemen atau konten yang terlihat oleh user
+
+# tujuan web browser adalah untuk menampilkannya secara benar
+# browser tidak menampilkan tag html, tapi menentukan bagaimana cara menampilkannya secara benar
+
+Notes : elemen berisi apapun dari tag pembuka sampai tag penutup
+        tag harus berpasangan (pembuka dan penutup)
+        ada 15 tag html yang tidak punya penutup (https://www.petanikode.com/html-tag-tanpa-penutup/)
+        The content inside the <body> section (the white area above) will be displayed in a browser. The content inside the <title> element will be shown in the browser's title bar or in the page's tab(dari w3school)
+
+PENJELASAN HTML 5.2 (https://html.spec.whatwg.org/multipage/)
