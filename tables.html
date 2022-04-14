@@ -5,6 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tables</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        border-radius: 2%;
+        border-color: aqua;
+        text-align: center;
+        padding: 15px;
+        border-spacing: 30px;
+      }
+      tr:nth-child(odd),
+      td:nth-child(odd),
+      th:nth-child(odd) {
+        background-color: #d6eeee;
+      }
+      tr:hover,
+      td:hover,
+      th:hover {
+        background-color: #fff;
+      }
+    </style>
   </head>
   <body>
     <h1>Tables</h1>
@@ -13,7 +36,7 @@
       Tables di html memungkinkan para programmers html untuk mengatur data dalam bentuk kolom dan baris. <br />
       Contoh
     </p>
-    <table border="1">
+    <table>
       <tr>
         <th>Person 1</th>
         <th>Person 2</th>
@@ -43,7 +66,135 @@
       <li>tbody : Groups the body content in a table</li>
       <li>tfoot : Groups the footer content in a table</li>
     </ul>
-  </body>
+    <p><a href="https://www.w3schools.com/html/html_tables.asp">Source untuk table</a></p>
 
-  <p><a href="https://www.w3schools.com/html/html_tables.asp">Source untuk table</a></p>
+    <!-- Border -->
+    <h2>Border</h2>
+    <p>Saat kita menggunakan border kesebuah table, kita juga menambahkan border ke sekitar tabel di setiap sel <br />Contoh</p>
+    <table class="table2">
+      <tr>
+        <th></th>
+        <th></th>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+
+    <h4>Value untuk tipe border</h4>
+    <ul>
+      <li>dotted</li>
+      <li>dashed</li>
+      <li>solid</li>
+      <li>double</li>
+      <li>groove</li>
+      <li>ridge</li>
+      <li>inset</li>
+      <li>outset</li>
+      <li>none</li>
+      <li>hidden</li>
+    </ul>
+
+    <!-- Sizes -->
+    <h1>Sizes</h1>
+    <p>tabel bisa mempunyai ukuran yang berbeda-beda untuk setiap kolom, row atau seluruh tabelnya <br />Contoh</p>
+    <table style="width: 100%">
+      <caption>
+        Ini table caption
+      </caption>
+      <tr>
+        <th colspan="2" rowspan="2">Firstname</th>
+        <th>Lastname</th>
+      </tr>
+      <tr style="height: 200px">
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+    </table>
+
+    <p>
+      Untuk mengubah jarak antar tabel, bisa menggunakan border-spacing property ditabel element, Defaultnya 2px <br />
+      Saat menggunakan border-collapse sepertinya border-spacing tidak akan bekerja seperti seharusnya
+    </p>
+
+    <!-- colgroup -->
+    <h1>Colgroup</h1>
+    <p>Colgroup element biasanya dipakai sebagai container untuk kolom spesifikasi(kata w3schools) <br />Tapi juga bisa digunakan untuk grouping setiap kolom untuk mempermudah styling. <br />Contoh</p>
+    <p>Span attribute menentukan berapa banyak coloumn yang akan terpengaruh</p>
+    <table style="width: 100%">
+      <colgroup>
+        <col span="3" />
+        <col span="3" style="background-color: pink" />
+      </colgroup>
+      <tr>
+        <th>MON</th>
+        <th>TUE</th>
+        <th>WED</th>
+        <th>THU</th>
+        <th>FRI</th>
+        <th>SAT</th>
+        <th>SUN</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>9</td>
+        <td>10</td>
+        <td>11</td>
+        <td>12</td>
+        <td>13</td>
+        <td>14</td>
+      </tr>
+      <tr>
+        <td>15</td>
+        <td>16</td>
+        <td>17</td>
+        <td>18</td>
+        <td>19</td>
+        <td>20</td>
+        <td>21</td>
+      </tr>
+      <tr>
+        <td>22</td>
+        <td>23</td>
+        <td>24</td>
+        <td>25</td>
+        <td>26</td>
+        <td>27</td>
+        <td>28</td>
+      </tr>
+    </table>
+
+    <p>Note :</p>
+    <p>Tag colgroup harus berada di dalam atau dibawah tag table, dan harus ditempatkan tepat dibawah tag table</p>
+    <p>Property yang bisa digunakan di tag colgroup</p>
+    <ul>
+      <li>width</li>
+
+      <li>visibility(bisa untuk menyembunyikan coloumn</li>
+      <!-- <col span="3" style="visibility: collapse"> -->
+
+      <li>background</li>
+      <li>border</li>
+    </ul>
+    <p><a href="https://www.w3schools.com/html/html_table_colgroup.asp">colgroup</a></p>
+  </body>
 </html>
