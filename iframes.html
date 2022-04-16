@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iframes</title>
+  </head>
+  <body>
+    <h1>Iframes</h1>
+    <p>Iframes digunakan untuk sebuah inline frame. Inline frame digunakan untuk meng-embed dokumen lain kedalam dokumen saat ini</p>
+    <!-- Syuntax -->
+    <!-- <iframe src="url" title="description"></iframe> -->
+    <p>Keterangan</p>
+    <ul>
+      <li>iframe secara defaut ada bordernya, pakar border: none untuk menghilangkan border</li>
+    </ul>
+
+    <h2>Iframe untuk target sebuah link</h2>
+    <p>Contoh iframe untuk target sebuah link</p>
+    <!-- name dan target harus punya value yang sama -->
+    <iframe src="iframes.html" name="iframe_a" height="300px" width="100%" title="Iframe Example"></iframe>
+    <p><a href="https://translate.google.com/?sl=en&tl=id&op=translate" target="iframe_a">Klik disini untuk pindah iframe ke translate</a></p>
+
+    <!-- chapter summary -->
+    <ul>
+      <li>Bisa digunakan untuk target sebuah link(jadi link tersebut tidak akan membuka tab baru, melainkan akan terbuka di are iframnya</li>
+      <li>Better pake title untuk memunculkan petunjuk saat hover</li>
+      <li>The HTML iframe tag specifies an inline frame</li>
+      <li>The src attribute defines the URL of the page to embed</li>
+      <li>Always include a title attribute (for screen readers)</li>
+      <li>The height and width attributes specifies the size of the iframe</li>
+      <li>Use border:none; to remove the border around the iframe</li>
+    </ul>
+    <p><a href="https://www.w3schools.com/html/html_iframe.asp">Source</a></p>
+  </body>
+</html>
