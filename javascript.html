@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript HTML</title>
+  </head>
+  <body>
+    <p><a href="https://www.w3schools.com/html/html_scripts.asp">Source</a></p>
+
+    <section id="terminologi">
+      <h1>Javascript in HTML</h1>
+      <p>Javascript membuat suatu halaman website lebih dinamis dan interaktif. Digunakanan dengan menggunakan tag script</p>
+      <li>Tag script digunakan untuk mendefinisikan sebuah client-side script(Javascript)</li>
+      <li>script tag contains script statements, atau menggunakan src attribute untuk mengarahkan ke external file</li>
+      <li>Biasanya digunakan untuk memanipulasi gambar, form validation, dan perubaan dinamis konten</li>
+      <li>Untuk mentarget element html menggunakan javasript bisa menggunakan DOM(method)</li>
+    </section>
+
+    <br />
+
+    <section class="example">
+      <h2 id="subjudul">Contoh</h2>
+      <p>Manipulasi element pakai javascript(DOM)</p>
+      <!-- yang akan dimanipulasi -->
+      <p id="demo">Ini teks yang akan diganti oleh javascript dengan cara menekan tombol</p>
+      <button type="button" onclick="myFunction()">Klik disini</button>
+      <button class="h2" onclick="h2Function()">Klik disini untuk mengubah h2</button>
+
+      <script>
+        function myFunction() {
+          document.getElementById("demo").innerHTML = "Ini teks yang akan menggantikannya!";
+        }
+
+        function h2Function() {
+          document.getElementById("subjudul").innerHTML = "Judul Ini Telah Diganti";
+        }
+      </script>
+    </section>
+
+    <section class="dailySum">
+      <h2>Daily sum</h2>
+      <li>script tag defines a client-side script</li>
+      <li>noscript tag defines an alternate content for users that do not support client-side scripts</li>
+      <br />
+      <li>Bisa digunakan untuk mengubah style suatu element juga, tapi ngapain</li>
+      <li>bisa ubah attribute juga</li>
+      <li>tag noscript bisa digunakan sebagai alternative konten yang ditampilkan kepada users yang browsernya tidak mengaktifkan atau mendukung Javascript</li>
+    </section>
+  </body>
+</html>
