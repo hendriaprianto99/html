@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>URL Encode</title>
+    <style>
+      body {
+        padding: 3%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>URL Encode</h1>
+    <ul>
+      <li>URL adalah kata lain dari web address</li>
+      <li>URL bisa terdiri dari susunan kata, atau juga bisa berupa IP adress</li>
+      <li>Biasanya orang akan menggunakan URL yang terdiri dari susunan kata, karena lebih mudah mengigat kata dari pada angka</li>
+    </ul>
+    <p><a href="https://www.w3schools.com/html/html_urlencode.asp">Source</a></p>
+    <hr />
+
+    <!-- Mulai dari sini -->
+    <h3>URL - Uniform Resource Locator</h3>
+    <p>Web browsers meminta halaman web ke server menggunakan URL. URL digunakan to address sebuah dokumen atau data lainnya di web</p>
+    <p>scheme://prefix.domain:port/path/filename</p>
+    <ul>
+      <li>scheme : Menentukan tipe dari internet services (kebanyakan http atau https)</li>
+      <li>prefix : Menentukan sebuah domain prefix (default buat http adalah www)</li>
+      <li>domain : Menentukan internet domain name (w3schools.com)</li>
+      <li>port : Menentukan host port number (defaulnya http 80)</li>
+      <li>path : Menentukan path di server (kalau gak ada, akan menuju ke root dari web)</li>
+      <li>filename : Menentukan nama resource</li>
+    </ul>
+
+    <!-- common url schemes -->
+    <h3>Common URL Schemes</h3>
+    <ul>
+      <li>http : web page pada umumnya. Not encrypted</li>
+      <li>https : Secure web pages. Encrypted</li>
+      <li>ftp : Downloading atau uploading files</li>
+      <li>file : file di local</li>
+    </ul>
+
+    <!-- URL Ecnoding -->
+    <h3>URL Ecnoding</h3>
+    <ul>
+      <li>URLs can only be sent over the Internet using the ASCII character-set. If a URL contains characters outside the ASCII set, the URL has to be converted.</li>
+      <li>URL encoding converts non-ASCII characters into a format that can be transmitted over the Internet.</li>
+      <li>URL encoding replaces non-ASCII characters with a "%" followed by hexadecimal digits.</li>
+      <li>URLs cannot contain spaces. URL encoding normally replaces a space with a plus (+) sign, or %20.</li>
+    </ul>
+
+    <!-- ASCII Encoding Example -->
+    <img src="../assets/img/url-encode.png" alt="ASCII Encoding Example"" />
+    <p><a href="https://www.w3schools.com/tags/ref_urlencode.asp" target="_blank">URL Encoding Reference reference</a></p>
+  </body>
+</html>
