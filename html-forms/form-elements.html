@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Elements</title>
+    <style>
+      body {
+        padding: 3%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Form Elements</h1>
+    <p>Akan membahas tentang semua form elements</p>
+    <p><a href="https://www.w3schools.com/html/html_form_elements.asp">Source</a></p>
+    <hr />
+
+    <!-- Mulai dari sini -->
+    <!-- HTML form elements -->
+    <h3>HTML Form Elements</h3>
+    <p>form element bisa punya satu atau lebih form elements</p>
+    <ul>
+      <li>input</li>
+      <li>label</li>
+      <li>select</li>
+      <li>textarea</li>
+      <li>button</li>
+      <li>fieldset</li>
+      <li>legend</li>
+      <li>datalist</li>
+      <li>output</li>
+      <li>option</li>
+      <li>optgroup</li>
+    </ul>
+    <hr />
+
+    <!-- input element -->
+    <h3>Input element</h3>
+    <p><a href="https://www.w3schools.com/html/html_form_input_types.asp">All the different values of the type attribute are covered in the next chapter</a></p>
+    <hr />
+
+    <!-- label element -->
+    <h3>Label Element</h3>
+    <ul>
+      <li>The label element defines a label for several form elements.</li>
+      <li>The label element is useful for screen-reader users, because the screen-reader will read out loud the label when the user focus on the input element</li>
+      <li>The for attribute of the label tag should be equal to the id attribute of the input element to bind them together.</li>
+    </ul>
+    <hr />
+
+    <!-- select element -->
+    <h3>Select Element</h3>
+    <p>Define a dropdown list</p>
+    <ul>
+      <li>The option elements defines an option that can be selected.</li>
+      <li>By default, the first item in the drop-down list is selected.</li>
+      <li>To define a pre-selected option, add the selected attribute to the option.</li>
+    </ul>
+
+    <h5>visible values</h5>
+    <p>Use the size attribute to specify the number of visible values</p>
+    <p>Use the multiple attribute to allow the user to select more than one value</p>
+    <hr />
+
+    <!-- textarea -->
+    <h3>Textarea Element</h3>
+    <p>Defines a multi-line input field</p>
+    <ul>
+      <li>The rows attribute specifies the visible number of lines in a text area.</li>
+      <li>The cols attribute specifies the visible width of a text area.</li>
+      <li>You can also define the size of the text area by using CSS.</li>
+    </ul>
+    <hr />
+
+    <!-- button element -->
+    <h3>Button Element</h3>
+    <p>The button element defines a clickable button.</p>
+    <hr />
+
+    <!-- The <fieldset> and <legend> Elements -->
+    <h3>Fieldset & legend elements</h3>
+    <ul>
+      <li>The fieldset element is used to group related data in a form.</li>
+      <li>The legend element defines a caption for the fieldset element.</li>
+    </ul>
+    <!-- contoh source code -->
+    <!-- <form action="/action_page.php">
+        <fieldset>
+          <legend>Personalia:</legend>
+          <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname" value="John"><br>
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" name="lname" value="Doe"><br><br>
+          <input type="submit" value="Submit">
+        </fieldset>
+      </form> -->
+    <hr />
+
+    <!-- datalist element -->
+    <h3>Datalist Element</h3>
+    <p>datalist element menentukan list dari pre-defined pilihan untuk input element.</p>
+    <p>The list attribute of the input element, must refer to the id attribute of the datalist element.</p>
+    <!-- contoh source code -->
+    <!-- <form action="/action_page.php">
+        <input list="browsers">
+        <datalist id="browsers">
+          <option value="Internet Explorer">
+          <option value="Firefox">
+          <option value="Chrome">
+          <option value="Opera">
+          <option value="Safari">
+        </datalist>
+      </form> -->
+    <hr />
+
+    <!-- output element -->
+    <h3>Output Element</h3>
+    <p>The output element represents the result of a calculation (like one performed by a script).</p>
+    <!-- contoh source code -->
+    <!-- <form action="/action_page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+      0
+      <input type="range" id="a" name="a" value="50" />
+      100 +
+      <input type="number" id="b" name="b" value="50" />
+      =
+      <output name="x" for="a b"></output>
+      <br /><br />
+      <input type="submit" />
+    </form>
+    <p><strong>Note:</strong> The output element is not supported in Edge prior version 13.</p> -->
+    <hr />
+
+    <!-- form elements -->
+    <img src="../assets/img/form-elements.png" alt="form elements" />
+  </body>
+</html>

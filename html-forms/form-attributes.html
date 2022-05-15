@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form attributes</title>
+    <style>
+      body {
+        padding: 3%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Forms attributes</h1>
+    <p>Membahas tentang attributes yang bisa digunakan di tag &lt;form&gt;</p>
+    <p><a href="https://www.w3schools.com/html/html_forms_attributes.asp">Source</a></p>
+
+    <!-- Mulai dari sini -->
+    <!-- action attribute -->
+    <h3>Action attribute</h3>
+    <ul>
+      <li>Menentukan action yang akan dilakukan saat form disubmit</li>
+      <li>Biasanya, data formnya akan dikirim ke file yang ada di server saat user meng-klik tombol submit</li>
+      <li>Kalau action attributnya tidak ada, maka data akan dikirim ke halaman itu sendiri</li>
+    </ul>
+    <hr />
+
+    <!-- target attribute -->
+    <h3>Target attribute</h3>
+    <p>Target attribute akan menentukantempat untuk menampilkan respons yang diterima setelah mengirimkan formulir</p>
+    <ul>
+      <li>_target : respons akan ditampilkan di halaman baru</li>
+      <li>_self : respons akan ditampilkan di halaman yang sedang aktif. (default)</li>
+      <li>_parent : respons akan ditampilkan di parent frame</li>
+      <li>_top : response is displayed in the full body of the window</li>
+      <li>framename : The response is displayed in a named iframe</li>
+    </ul>
+    <hr />
+
+    <h3>Method attribute</h3>
+    <p>Method attribute menentukan http method yang akan digunakan saat mensubmit data form</p>
+    <ul>
+      <li>get : Menambahkan data ke/lewat url, max 2048 characters, data akan kelihatan di url,</li>
+      <li>post : Menambahkan data form kedalam body dari HTTP request, tidak ditampilkan di url, unlimited, gak bisa di bookmark</li>
+    </ul>
+    <hr />
+
+    <!-- autocomplete -->
+    <h3>Autocomplete attribute</h3>
+    <p>Saat autocomplete on, browser otomatis mengisi values berdasarkan values yang pernah user input sebelumnya.</p>
+    <hr />
+
+    <!-- novalidate attribute -->
+    <h3>novalidate attribute</h3>
+    <p>Menentukan form-data (input) should not be validated when submitted.</p>
+    <hr />
+
+    <!-- lists of all form attributes -->
+    <img src="../assets/img/form-attributes.png" alt="List forms attributes" />
+    <hr />
+  </body>
+</html>
