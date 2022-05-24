@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML SVG</title>
+  </head>
+  <body>
+    <h1>HTML SVG</h1>
+    <p>SVG defines vector-based graphics didalam xml format</p>
+    <p><a href="https://www.w3schools.com/html/html5_svg.asp">Source</a></p>
+    <hr />
+
+    <!-- MUlai dari sini -->
+    <!-- apa itu svg -->
+    <h3>Apa itu SVG</h3>
+    <ul>
+      <li>Kepanjangan dari scalable vector graphics</li>
+      <li>digunakan untuk mendefinisikan graphics untuk halaman web</li>
+      <li>w3c recommendation</li>
+    </ul>
+
+    <!-- svg element -->
+    <h3>svg element</h3>
+    <ul>
+      <li>svg element merupakan sebuah container untuk svg graphics</li>
+      <li>svg element mempunyai beberapa metode untuk menggambar paths, boxex, circles, text, dan graphics image</li>
+    </ul>
+    <hr />
+
+    <!-- svg -->
+    <h3>svg circle</h3>
+    <!-- circle -->
+    <svg width="100" height="100">
+      <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+    </svg>
+
+    <!-- ractangle -->
+    <svg width="400" height="100">
+      <rect width="400" height="100" style="fill: rgb(0, 0, 255); stroke-width: 10; stroke: rgb(0, 0, 0)" />
+    </svg>
+
+    <!-- rounded rectangle -->
+    <svg width="250" height="180">
+      <rect x="50" y="20" rx="20" ry="20" width="150" height="150" style="fill: red; stroke: black; stroke-width: 5; opacity: 1" />
+    </svg>
+
+    <!-- star -->
+    <svg width="300" height="200">
+      <polygon points="100,10 40,198 190,78 10,78 160,198" style="fill: lime; stroke: purple; stroke-width: 5; fill-rule: evenodd" />
+    </svg>
+
+    <!-- svg logo -->
+    <svg height="130" width="500">
+      <defs>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color: rgb(255, 255, 0); stop-opacity: 1" />
+          <stop offset="100%" style="stop-color: rgb(255, 0, 0); stop-opacity: 1" />
+        </linearGradient>
+      </defs>
+      <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+      <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">SVG</text>
+      Sorry, your browser does not support inline SVG.
+    </svg>
+    <hr />
+
+    <!-- perbedaan -->
+    <h3>perbedaan antara svg dan canvas</h3>
+    <ul>
+      <li>svg adalah sebuah bahasa untuk mendeskripsikan 2D graphics di xml</li>
+      <li>canvas menggambar 2D graphics, dengan cepat (with a JavaScript)</li>
+      <li>svg is xml based</li>
+      <li>di svg, setiap pola yang digambar akan diingat sebagai object. jika attributes dari sebuah svg object diubah, maka browser bisa secara otomatis re-render polanya.</li>
+      <li>
+        Canvas di render pixel by pixel. once the graphic is drawn, it is forgotten by the browser. If its position should be changed, the entire scene needs to be redrawn, including any objects that might have been covered by the graphic.
+      </li>
+    </ul>
+    <img src="../assets/img/graphics.png" alt="Perbedaan antara svg dan canvas element" title="perbandingan antara svg dan canvas element" />
+    <hr />
+
+    <p><a href="https://www.w3schools.com/graphics/svg_intro.asp">More about svg</a></p>
+  </body>
+</html>
