@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Canvas</title>
+  </head>
+  <body>
+    <h1>HTML Canvas</h1>
+    <p>HTML Canvas digunakan untuk menggambar graphics di sebuah halaman web</p>
+    <p><a href="https://www.w3schools.com/html/html5_canvas.asp">Source</a></p>
+    <hr />
+
+    <!-- Mulai dari sini -->
+    <h3>Apa itu html canvas</h3>
+    <ul>
+      <li>digunakan untuk menggambar graphics dengan cepat menggunakan javascript</li>
+      <li>canvas eleement hanya sebuah container untuk graphics</li>
+      <li>canvas element mempunyai beberapa metode untuk menggambar paths, boxex, circles, text, dan menambahkan gambar</li>
+    </ul>
+    <p>contoh :</p>
+    <canvas id="myCanvas" width="200" height="100" style="border: 1px solid #000000; background-color: aqua"></canvas>
+    <canvas id="myCanvass" width="200" height="100" style="border: 1px solid #000000; background-color: aqua"></canvas>
+    <canvas id="myCanvasss" width="200" height="100" style="border: 1px solid #000000; background-color: aqua"></canvas>
+    <hr />
+
+    <!-- akhir -->
+    <p><a href="https://www.w3schools.com/graphics/canvas_intro.asp">More about canvas element</a></p>
+
+    <!-- script untuk modifikasi canvas element -->
+    <script>
+      var c = document.getElementById("myCanvas");
+      var ctx = c.getContext("2d");
+      //   line
+      ctx.moveTo(0, 0);
+      ctx.lineTo(200, 100);
+      ctx.stroke();
+
+      //   circle
+      ctx.beginPath();
+      ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+      ctx.stroke();
+
+      //   text
+      ctx.font = "30px Arial";
+      ctx.fillText("Hello World", 10, 50);
+
+      //   stroke text
+      ctx.strokeText("Hello World", 50, 60);
+
+      //   linear gradient
+      var c = document.getElementById("myCanvass");
+      var ctx = c.getContext("2d");
+      // Create gradient
+      var grd = ctx.createLinearGradient(0, 0, 200, 0);
+      grd.addColorStop(0, "red");
+      grd.addColorStop(1, "white");
+      // Fill with gradient
+      ctx.fillStyle = grd;
+      ctx.fillRect(10, 10, 150, 80);
+
+      //   circular gradient
+      var c = document.getElementById("myCanvasss");
+      var ctx = c.getContext("2d");
+      // Create gradient
+      var grd = ctx.createLinearGradient(75, 50, 5, 90, 60, 100);
+      grd.addColorStop(0, "red");
+      grd.addColorStop(1, "white");
+      // Fill with gradient
+      ctx.fillStyle = grd;
+      ctx.fillRect(10, 10, 150, 80);
+    </script>
+  </body>
+</html>
