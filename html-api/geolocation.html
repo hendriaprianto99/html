@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geolocation</title>
+  </head>
+  <body>
+    <h1>Geolocation</h1>
+    <p>Digunakan untuk menentukan posisi geolocation users</p>
+    <p>Since this can compromise privacy, the position is not available unless the user approves it.</p>
+    <hr />
+
+    <!-- Mulai dari sini -->
+    <img src="../assets/img/geolocation.png" alt="Geolocation Script" />
+    <hr />
+
+    <!-- data -->
+    <img src="../assets/img/geo.png" alt="">
+    <hr>
+
+    <!-- aother method geolocation -->
+    <img src="../assets/img/another-method-geolocation.png" alt="antoher method geolocation">
+
+    <!-- contoh source code -->
+        <p>Click the button to get your coordinates.</p>
+
+        <button onclick="getLocation()">Try It</button>
+
+        <p id="demo"></p>
+
+        <script>
+          var x = document.getElementById("demo");
+
+          function getLocation() {
+            if (navigator.geolocation) {
+              navigator.geolocation.getCurrentPosition(showPosition);
+            } else {
+              x.innerHTML = "Geolocation is not supported by this browser.";
+            }
+          }
+
+          function showPosition(position) {
+            x.innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude;
+          }
+
+        //   handling errors
+        function showError(error) {
+            switch(error.code) {
+                case error.PERMISSION_DENIED:
+                x.innerHTML = "User denied the request for Geolocation."
+                break;
+                case error.POSITION_UNAVAILABLE:
+                x.innerHTML = "Location information is unavailable."
+                break;
+                case error.TIMEOUT:
+                x.innerHTML = "The request to get user location timed out."
+                break;
+                case error.UNKNOWN_ERROR:
+                x.innerHTML = "An unknown error occurred."
+                break;
+            }
+        }
+        </script>
+
+        <!-- source -->
+        <p><a href="https://www.w3schools.com/html/html5_geolocation.asp">Source</a></p>
+        <hr />
+      </body>
+    </html>
+  </body>
+</html>
